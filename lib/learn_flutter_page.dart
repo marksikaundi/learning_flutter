@@ -6,6 +6,7 @@ class LearnFlutterPage extends StatefulWidget {
   @override
   State<LearnFlutterPage> createState() => _LearnFlutterPageState();
 }
+
 // AM NOW DOING DART WITH FLUTTER
 class _LearnFlutterPageState extends State<LearnFlutterPage> {
   @override
@@ -31,13 +32,35 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
             color: Colors.black,
           ),
           Container(
+            padding: const EdgeInsets.all(10.0),
+            margin: const EdgeInsets.all(10.0),
             color: Colors.blueGrey,
             width: double.infinity,
-            child: const Text(
-              'This is a Text widget',
-              style: TextStyle(color: Colors.white),
+            child: const Center(
+              child: Text(
+                'This is a Text widget',
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ),
+          ElevatedButton(
+            onPressed: () {
+              debugPrint('Eleveted Button'); //Eleveted button
+            },
+            child: const Text('Eleveted Button'),
+          ),
+          OutlinedButton(
+            onPressed: () {
+              debugPrint('Outlined Button'); //Outlined Button
+            },
+            child: const Text('Outlined Button'),
+          ),
+          TextButton(
+            onPressed: () {
+              debugPrint('Text Button'); //Text Button
+            },
+            child: const Text('Text Button'), //38 minutes
+          )
         ],
       ),
     );
