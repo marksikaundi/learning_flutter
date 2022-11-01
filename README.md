@@ -1,4 +1,4 @@
-# learning_flutter Basics as a beginner in 2022
+# Introduction to learning_flutter 
 
 A new Flutter project.
 
